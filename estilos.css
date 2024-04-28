@@ -1,0 +1,475 @@
+    /* Estilos generales */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('imagenes/fondopokemon.jpg'); /* Placeholder image */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+.content-container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el título "Mi Pokédex" */
+.title-normal {
+    color: #e74c3c; /* Rojo alusivo a Pokémon */
+}
+
+.title-fighting {
+    color: #C03028; /* Fighting */
+}
+
+.title-flying {
+    color: #A890F0; /* Flying */
+}
+
+.title-poison {
+    color: #A040A0; /* Poison */
+}
+
+.title-ground {
+    color: #E0C068; /* Ground */
+}
+
+.title-rock {
+    color: #B8A038; /* Rock */
+}
+
+.title-bug {
+    color: #A8B820; /* Bug */
+}
+
+.title-ghost {
+    color: #705898; /* Ghost */
+}
+
+.title-steel {
+    color: #B8B8D0; /* Steel */
+}
+
+.title-fire {
+    color: #F08030; /* Fire */
+}
+
+.title-water {
+    color: #6890F0; /* Water */
+}
+
+.title-grass {
+    color: #78C850; /* Grass */
+}
+
+.title-electric {
+    color: #F8D030; /* Electric */
+}
+
+.title-psychic {
+    color: #F85888; /* Psychic */
+}
+
+.title-ice {
+    color: #98D8D8; /* Ice */
+}
+
+.title-dragon {
+    color: #7038F8; /* Dragon */
+}
+
+.title-dark {
+    color: #705848; /* Dark */
+}
+
+.title-fairy {
+    color: #EE99AC; /* Fairy */
+}
+
+.title-unknown {
+    color: #68A090; /* Unknown */
+}
+
+.title-shadow {
+    color: #705848; /* Shadow */
+}
+
+/* Estilos para el botón de búsqueda */
+.button-normal {
+    background-color: #e74c3c; /* Rojo alusivo a Pokémon */
+    color: #fff;
+}
+
+.button-fighting {
+    background-color: #C03028; /* Fighting */
+    color: #fff;
+}
+
+.button-flying {
+    background-color: #A890F0; /* Flying */
+    color: #fff;
+}
+
+.button-poison {
+    background-color: #A040A0; /* Poison */
+    color: #fff;
+}
+
+.button-ground {
+    background-color: #E0C068; /* Ground */
+    color: #fff;
+}
+
+.button-rock {
+    background-color: #B8A038; /* Rock */
+    color: #fff;
+}
+
+.button-bug {
+    background-color: #A8B820; /* Bug */
+    color: #fff;
+}
+
+.button-ghost {
+    background-color: #705898; /* Ghost */
+    color: #fff;
+}
+
+.button-steel {
+    background-color: #B8B8D0; /* Steel */
+    color: #fff;
+}
+
+.button-fire {
+    background-color: #F08030; /* Fire */
+    color: #fff;
+}
+
+.button-water {
+    background-color: #6890F0; /* Water */
+    color: #fff;
+}
+
+.button-grass {
+    background-color: #78C850; /* Grass */
+    color: #fff;
+}
+
+.button-electric {
+    background-color: #F8D030; /* Electric */
+    color: #333;
+}
+
+.button-psychic {
+    background-color: #F85888; /* Psychic */
+    color: #fff;
+}
+
+.button-ice {
+    background-color: #98D8D8; /* Ice */
+    color: #333;
+}
+
+.button-dragon {
+    background-color: #7038F8; /* Dragon */
+    color: #fff;
+}
+
+.button-dark {
+    background-color: #705848; /* Dark */
+    color: #fff;
+}
+
+.button-fairy {
+    background-color: #EE99AC; /* Fairy */
+    color: #333;
+}
+
+.button-unknown {
+    background-color: #68A090; /* Unknown */
+    color: #fff;
+}
+
+.button-shadow {
+    background-color: #705848; /* Shadow */
+    color: #fff;
+}
+
+    h1 {
+        font-size: 36px;
+        color: #e74c3c; /* Rojo alusivo a Pokémon */
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    .pokemon-select-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .pokemon-select-container label {
+        font-size: 18px;
+        color: #333;
+        margin-right: 10px;
+    }
+
+    .pokemon-select-container input[type="text"] {
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        width: 200px;
+    }
+
+    .pokemon-select-container button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #e74c3c; /* Rojo alusivo a Pokémon */
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .pokemon-select-container button:hover {
+        background-color: #c0392b; /* Rojo oscuro alusivo a Pokémon */
+    }
+
+    .pokemon-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .pokemon-img-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    .pokemon-img {
+        width: 350px; /* Tamaño ajustado de la imagen */
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: none; /* Ocultar la imagen al inicio */
+    }
+
+    .pokemon-gif {
+        width: 100px; /* Ajusta el tamaño del gif según sea necesario */
+        height: auto;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border: none; /* Elimina el borde del gif */
+        border-radius: 0; /* Elimina el radio del borde del gif */
+        margin: 10px; /* Añade espacio entre el gif y la imagen */
+        display: none; /* Ocultar el gif al inicio */
+    }
+
+    .pokemon-info-container {
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    .pokemon-info {
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .pokemon-info p {
+        margin: 5px 0;
+    }
+
+    /* Estilos para los tipos de Pokémon */
+    .type-normal {
+    background-color: #A8A878; /* Normal */
+    color: #FFF;
+}
+
+.type-fighting {
+    background-color: #C03028; /* Fighting */
+    color: #FFF;
+}
+
+.type-flying {
+    background-color: #A890F0; /* Flying */
+    color: #FFF;
+}
+
+.type-poison {
+    background-color: #A040A0; /* Poison */
+    color: #FFF;
+}
+
+.type-ground {
+    background-color: #E0C068; /* Ground */
+    color: #FFF;
+}
+
+.type-rock {
+    background-color: #B8A038; /* Rock */
+    color: #FFF;
+}
+
+.type-bug {
+    background-color: #A8B820; /* Bug */
+    color: #FFF;
+}
+
+.type-ghost {
+    background-color: #705898; /* Ghost */
+    color: #FFF;
+}
+
+.type-steel {
+    background-color: #B8B8D0; /* Steel */
+    color: #FFF;
+}
+
+.type-fire {
+    background-color: #F08030; /* Fire */
+    color: #FFF;
+}
+
+.type-water {
+    background-color: #6890F0; /* Water */
+    color: #FFF;
+}
+
+.type-grass {
+    background-color: #78C850; /* Grass */
+    color: #FFF;
+}
+
+.type-electric {
+    background-color: #F8D030; /* Electric */
+    color: #333;
+}
+
+.type-psychic {
+    background-color: #F85888; /* Psychic */
+    color: #FFF;
+}
+
+.type-ice {
+    background-color: #98D8D8; /* Ice */
+    color: #333;
+}
+
+.type-dragon {
+    background-color: #7038F8; /* Dragon */
+    color: #FFF;
+}
+
+.type-dark {
+    background-color: #705848; /* Dark */
+    color: #FFF;
+}
+
+.type-fairy {
+    background-color: #EE99AC; /* Fairy */
+    color: #333;
+}
+
+.type-unknown {
+    background-color: #68A090; /* Unknown */
+    color: #FFF;
+}
+
+.type-shadow {
+    background-color: #705848; /* Shadow */
+    color: #FFF;
+}
+.background-normal {
+    background-image: url('imagenes/normal.jpg'); /* Fondo para tipo Normal */
+}
+
+.background-fighting {
+    background-image: url('imagenes/fighting.jpg'); /* Fondo para tipo Fighting */
+}
+
+.background-flying {
+    background-image: url('imagenes/flying.jpg'); /* Fondo para tipo Flying */
+}
+
+.background-poison {
+    background-image: url('imagenes/poison.webp'); /* Fondo para tipo Poison */
+}
+
+.background-ground {
+    background-image: url('imagenes/ground.webp'); /* Fondo para tipo Ground */
+}
+
+.background-rock {
+    background-image: url('imagenes/rock.jpg'); /* Fondo para tipo Rock */
+}
+
+.background-bug {
+    background-image: url('imagenes/bug.webp'); /* Fondo para tipo Bug */
+}
+
+.background-ghost {
+    background-image: url('imagenes/ghost.jpg'); /* Fondo para tipo Ghost */
+}
+
+.background-steel {
+    background-image: url('imagenes/steel.webp'); /* Fondo para tipo Steel */
+}
+
+.background-fire {
+    background-image: url('imagenes/fire.jpg'); /* Fondo para tipo Fire */
+}
+
+.background-water {
+    background-image: url('imagenes/water.jpg'); /* Fondo para tipo Water */
+}
+
+.background-grass {
+    background-image: url('imagenes/grass.jpg'); /* Fondo para tipo Grass */
+}
+
+.background-electric {
+    background-image: url('imagenes/electric.webp'); /* Fondo para tipo Electric */
+}
+
+.background-psychic {
+    background-image: url('imagenes/psychic.png'); /* Fondo para tipo Psychic */
+}
+
+.background-ice {
+    background-image: url('imagenes/ice.jpg'); /* Fondo para tipo Ice */
+}
+
+.background-dragon {
+    background-image: url('imagenes/dragon.jpg'); /* Fondo para tipo Dragon */
+}
+
+.background-dark {
+    background-image: url('imagenes/dark.jpg'); /* Fondo para tipo Dark */
+}
+
+.background-fairy {
+    background-image: url('imagenes/fairy.jpg'); /* Fondo para tipo Fairy */
+}
+
+.background-unknown {
+    background-image: url('imagenes/unknown.webp'); /* Fondo para tipo Unknown */
+}
+
+.background-shadow {
+    background-image: url('imagenes/ .jpg'); /* Fondo para tipo Shadow */
+}
+
