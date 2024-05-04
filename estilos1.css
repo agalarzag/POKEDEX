@@ -1,0 +1,132 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.title {
+    color: #e74c3c;
+}
+
+#subtitle {
+    margin-top: 30px; /* Margen superior */
+    margin-bottom: 40px;
+}
+
+#backgroundVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ajusta el ancho del video al 100% del ancho del viewport */
+    height: 100%; /* Ajusta la altura del video al 100% del alto del viewport */
+    z-index: -1; /* Asegura que el video esté detrás de todo el contenido */
+    object-fit: cover; /* Ajusta el tamaño del video para cubrir todo el contenedor */
+}
+
+.pokemon-item {
+    display: inline-block;
+    width: calc(20% - 20px); /* Ancho flexible para que quepan 5 pokemones en una fila */
+    text-align: center; /* Centra el contenido horizontalmente */
+    margin: 0 10px; /* Margen horizontal */
+    padding: 0;
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho */
+}
+
+.pokemon-item img {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto */
+    border-radius: 10px; /* Ajusta el radio de la esquina para redondear los bordes */
+    transition: transform 0.2s; /* Agrega una transición suave al hacer hover */
+}
+
+.pokemon-item:hover img {
+    transform: scale(1.1); /* Escala la imagen al 110% cuando se pasa el mouse sobre ella */
+}
+.filters {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1000; /* Asegura que esté por encima del contenido */
+}
+.filters label,
+.filters select {
+    margin-bottom: 5px;
+}
+
+
+.filters label {
+    margin-right: 10px;
+}
+
+.filters select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.filters select:focus {
+    outline: none;
+    border-color: #ff0000; /* Color rojo para resaltar el foco */
+}
+.content-container {
+    position: relative;
+}
+
+.pagination {
+    position: relative;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 35px;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 5px; /* Añadir margen entre los botones */
+}
+
+.pagination button:hover {
+    background-color: #2980b9;
+}
+.pagination .pageNumber {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 2px;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination .pageNumber.active {
+    background-color: #3498db;
+    color: white;
+}
+.special-background {
+    background-color: azul;
+}
+
+
+
+
